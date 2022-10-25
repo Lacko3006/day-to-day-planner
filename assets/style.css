@@ -1,9 +1,9 @@
 * {
-  box-sizing: border-box
-} 
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -75,13 +75,12 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-#block1{
+#block1 {
   display: flex;
   border-style: solid;
   flex-direction: row;
   align-items: center;
 }
-
 
 #textBox {
   height: 100px;
