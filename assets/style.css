@@ -74,16 +74,9 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-h4 {
-  margin: 5px;
-}
 
 #block {
   display: flex;
   flex-direction: row;
 }
 
-#textBox {
-  height: 100px;
-  width: 88%;
-}
