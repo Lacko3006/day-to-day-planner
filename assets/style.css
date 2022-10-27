@@ -80,9 +80,7 @@ h4 {
 
 #block {
   display: flex;
-  /* border-style: solid; */
   flex-direction: row;
-  align-items: center;
 }
 
 #textBox {
