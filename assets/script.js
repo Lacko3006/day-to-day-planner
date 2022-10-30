@@ -5,18 +5,23 @@ $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 function TimeTracker() {
   let hourOfDay = moment().hour();
   $(".time-block").each(function () {
-    let currentHour = parseInt($(this).attr("id").split("hour")[1]);
+    let currentHour = parseInt($(this).attr("id").split("hour-")[1]);
+    console.log(currentHour)
 // if statements being used to determine the class of that time-block
     if (currentHour < hourOfDay) {
       $(this).addClass("past");
       $(this).removeClass("present");
       $(this).removeClass("future");
-    } else if (currentHour === hourOfDay) {
+    } 
+    else if (currentHour === hourOfDay) {
       $(this).removeClass("past");
       $(this).addClass("present");
       $(this).removeClass("future");
-    } else (currentHour > hourOfDay) {
-       $(this).removeClass("past") 
+    } 
+    else {
+       $(this).removeClass("past"); 
+       $(this).removeClass("present");
+       $(this).addClass("future");
     }
   });
 }
@@ -28,3 +33,5 @@ $("#container").on("click", "button", function () {
   let time = $(this).parent().attr("id");
   localStorage.setItem(time, text);
 });
+
+$("#hour-9 .description").val(localStorage.getItem("hour9"));
