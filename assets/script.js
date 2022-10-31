@@ -25,7 +25,7 @@ function TimeTracker() {
     }
   });
 }
-TimeTracker();
+  TimeTracker();
 
 //click event listener to add text input into local storage
 $("#container").on("click", "button", function () {
@@ -34,4 +34,13 @@ $("#container").on("click", "button", function () {
   localStorage.setItem(time, text);
 });
 
-$("#hour-9 .description").val(localStorage.getItem("hour9"));
+// getItem allows me to refresh the page and the saved events persist
+$("#hour-9 .description").val(localStorage.getItem("hour-9"));
+$("#hour-10 .description").val(localStorage.getItem("hour-10"));
+$("#hour-11 .description").val(localStorage.getItem("hour-11"));
+$("#hour-12 .description").val(localStorage.getItem("hour-12"));
+$("#hour-13 .description").val(localStorage.getItem("hour-13"));
+$("#hour-14 .description").val(localStorage.getItem("hour-14"));
+$("#hour-15 .description").val(localStorage.getItem("hour-15"));
+$("#hour-16 .description").val(localStorage.getItem("hour-16"));
+$("#hour-17 .description").val(localStorage.getItem("hour-17"));
