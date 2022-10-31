@@ -8,7 +8,6 @@ This project was built to demonstrate my ability to implement web APIs and the u
 
 
 ## Mock Up
-![day to day planner](./assets/images/)
+![day to day planner](./assets/images/day-to-day-planner.gif)
 
 ## Link
-https://github.com/Lacko3006/day-to-day-planner

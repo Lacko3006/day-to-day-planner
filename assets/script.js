@@ -10,17 +10,17 @@ function TimeTracker() {
 console.log($(this).children("textarea"))
     if (currentHour < hourOfDay) {
       $(this).children("textarea").addClass("past");
-      $(this).children("textarea").addClass("present");
-      $(this).children("textarea").addClass("future");
+      $(this).children("textarea").removeClass("present");
+      $(this).children("textarea").removeClass("future");
     } 
     else if (currentHour === hourOfDay) {
-      $(this).children("textarea").addClass("past");
+      $(this).children("textarea").removeClass("past");
       $(this).children("textarea").addClass("present");
-      $(this).children("textarea").addClass("future");
+      $(this).children("textarea").removeClass("future");
     } 
     else {
-       $(this).children("textarea").addClass("past"); 
-       $(this).children("textarea").addClass("present");
+       $(this).children("textarea").removeClass("past"); 
+       $(this).children("textarea").removeClass("present");
        $(this).children("textarea").addClass("future");
     }
   });
