@@ -11,3 +11,4 @@ This project was built to demonstrate my ability to implement web APIs and the u
 ![day to day planner](./assets/images/day-to-day-planner.gif)
 
 ## Link
+https://lacko3006.github.io/day-to-day-planner/
