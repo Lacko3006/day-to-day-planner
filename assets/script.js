@@ -7,7 +7,7 @@ function TimeTracker() {
   $(".time-block").each(function () {
     let currentHour = parseInt($(this).attr("id").split("hour-")[1]);
     console.log(currentHour)
-// if statements being used to determine the class of that time-block
+// if, else if & else statements being used to determine the class of that time-block
     if (currentHour < hourOfDay) {
       $(this).addClass("past");
       $(this).removeClass("present");
@@ -27,7 +27,7 @@ function TimeTracker() {
 }
 TimeTracker();
 
-//click event listener to add to local storage
+//click event listener to add text input into local storage
 $("#container").on("click", "button", function () {
   let text = $(this).siblings(".description").val();
   let time = $(this).parent().attr("id");
