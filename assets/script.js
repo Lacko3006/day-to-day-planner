@@ -7,7 +7,6 @@ function TimeTracker() {
   $(".time-block").each(function () {
     let currentHour = parseInt($(this).attr("id").split("hour-")[1]);
 // if, else if & else statements being used to determine the class of that time-block
-console.log($(this).children("textarea"))
     if (currentHour < hourOfDay) {
       $(this).children("textarea").addClass("past");
       $(this).children("textarea").removeClass("present");
