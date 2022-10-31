@@ -6,7 +6,6 @@ function TimeTracker() {
   let hourOfDay = moment().hour();
   $(".time-block").each(function () {
     let currentHour = parseInt($(this).attr("id").split("hour-")[1]);
-    console.log(currentHour)
 // if, else if & else statements being used to determine the class of that time-block
     if (currentHour < hourOfDay) {
       $(this).addClass("past");
