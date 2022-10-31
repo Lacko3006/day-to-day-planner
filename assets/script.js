@@ -7,20 +7,21 @@ function TimeTracker() {
   $(".time-block").each(function () {
     let currentHour = parseInt($(this).attr("id").split("hour-")[1]);
 // if, else if & else statements being used to determine the class of that time-block
+console.log($(this).children("textarea"))
     if (currentHour < hourOfDay) {
-      $(this).addClass("past");
-      $(this).removeClass("present");
-      $(this).removeClass("future");
+      $(this).children("textarea").addClass("past");
+      $(this).children("textarea").addClass("present");
+      $(this).children("textarea").addClass("future");
     } 
     else if (currentHour === hourOfDay) {
-      $(this).removeClass("past");
-      $(this).addClass("present");
-      $(this).removeClass("future");
+      $(this).children("textarea").addClass("past");
+      $(this).children("textarea").addClass("present");
+      $(this).children("textarea").addClass("future");
     } 
     else {
-       $(this).removeClass("past"); 
-       $(this).removeClass("present");
-       $(this).addClass("future");
+       $(this).children("textarea").addClass("past"); 
+       $(this).children("textarea").addClass("present");
+       $(this).children("textarea").addClass("future");
     }
   });
 }
